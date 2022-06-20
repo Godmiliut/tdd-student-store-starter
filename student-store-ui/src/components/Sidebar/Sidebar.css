@@ -1,6 +1,11 @@
 .sidebar.closed{
     width: 60px;
 }
+
+.sidebar.open {
+    width: 575px;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -26,22 +31,8 @@
     border: none;
 }
 
-.shopping-cart {
-    width: 100%;
-    color: #fff;
-}
-
-.shopping-cart .cart-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    width: 100%;
-    padding-left: .5rem;
-}
-
-.shopping-cart .cart-icon {
-    margin-bottom: 16px;
+.sidebar .toggle-button.open {
+    transform: rotateY(180deg);
 }
 .sidebar i {
     margin-right: 10px;

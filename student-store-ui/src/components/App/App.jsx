@@ -60,7 +60,7 @@ export default function App() {
     <div className="app">
       <BrowserRouter>
         <main>
-        <Sidebar />
+        <Sidebar isOpen={isOpen} handleOnToggle={handleOnToggle} shoppingCart={shoppingCart}/>
         <Navbar />
         <Hero/>
         <SubNavbar category={category} setCategory={setCategory} searchWord={searchWord} setSearchWord={setSearchWord}/>

@@ -1,27 +1,26 @@
-import * as React from "react"
-import CheckoutForm from "../CheckoutForm/CheckoutForm"
-import "./Sidebar.css"
+import * as React from "react";
+import "./Sidebar.css";
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
+  let sName="";
+  let bName="";
+  if(props.isOpen== false){
+    sName="sidebar closed";
+    bName="toggle-button button closed";
+  }
+  else{
+    sName="sidebar open";
+    bName="toggle-button button open"
+  }
   return (
-    <section className="sidebar closed">
+    <section className={sName}>
       <div className="wrapper">
-        <button className="toggle-button button closed">
+        <button className={bName} onClick={props.handleOnToggle}>
           <i className="material-icons md-48">arrow_forward</i>
         </button>
-        <div className="shopping-cart">
-          <div className="cart-icons">
-            <span className="cart-icon icon button">
-              <i className="material-icons md-48">add_shopping_cart</i>
-            </span>
-            <span className="cart-icon icon button">
-              <i className="material-icons md-48">monetization_on</i>
-            </span>
-            <span className="cart-icon icon button">
-              <i className="material-icons md-48">fact_check</i>
-            </span>
-          </div>
-        </div>
+        <ShoppingCart isOpen={props.isOpen} shoppingCart={props.shoppingCart}/>
       </div>
     </section>
   )

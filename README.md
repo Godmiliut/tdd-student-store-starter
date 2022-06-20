@@ -15,7 +15,7 @@ Selling merchandise in the modern era requires digital solutions. For this proje
 - [x] User can click on the categories (Clothing, food, etc) to filter the product grid by type.
 - [x] User can search for products.
 - [x] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
-- [ ] User can click to expand the shopping cart in the left navigation.
+- [x] User can click to expand the shopping cart in the left navigation.
 - [ ] User can click the '+' button on a product cart to increment that product in the shopping cart.
 - [ ] User can click the '-' button on a product cart to increment that product in the shopping cart.
 - [ ] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
@@ -23,7 +23,7 @@ Selling merchandise in the modern era requires digital solutions. For this proje
 
 #### Stretch Features
 
-- [ ] User can click in the top navigation bar to scroll to the relevant section.
+- [x] User can click in the top navigation bar to scroll to the relevant section.
 - [ ] User sees a "not found" display when searching for a nonexistent product.
 - [ ] Create an endpoint for fetching all orders in the database, and an endpoint for serving an individual order based on its id.
 - [ ] Build a page in the UI that displays the list of all past orders and lets the user click on any individual order to take them to a more detailed page of the transaction.
@@ -191,7 +191,7 @@ The following specifications were met on the Express backend and the React front
     - `handleOnCheckoutFormChange` - handler function to update the `checkoutForm` object
     - `handleOnSubmitCheckoutForm` - handler function to submit the user's order to the API
     - `handleOnToggle` - handler function to toggle open/closed `Sidebar` state
-  - [] It should always render a `button` element with the `className` of `toggle-button`. When that button is clicked it should change the `isOpen` prop by calling the `handleOnToggle` prop.
+  - [x] It should always render a `button` element with the `className` of `toggle-button`. When that button is clicked it should change the `isOpen` prop by calling the `handleOnToggle` prop.
   - [] When the sidebar is opened, it should display the `ShoppingCart` and `CheckoutForm` components and should be wider than `350px`.
   - [x] When the sidebar is closed, it should only render the toggle button and shouldn't be wider than `150px`.
 
@@ -278,3 +278,19 @@ The following specifications were met on the Express backend and the React front
         - **optional**:
           - [ ] `receipt` - text describing the order (what might go on a receipt)
       - [ ] It should then send a JSON response back to the client with the new purchase like so: `{ "purchase": purchase }`. The response should have a `201` status code for a resource created action.
+
+### Reflection
+
+- Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
+
+  I believe some topics that are fundamental for the completion of this assignment were not thoroughly discussed through the labs. These include the Routes components and the axios library. Otherwise, I believe the Fast Food Feud and the Twitter clone were pretty helpful as practical resources for ReactJS.
+
+- If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
+
+  If I had more time, I would have focused on getting the stretch features done. Although the ShoppingCart and the CheckoutForm components are complex features to accomplish, counting with the familiarity to these challenges will be definitely beneficial for future assignments.
+
+- Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+
+  Although time was very limited, I was able to show all the features I had done so far and received constructive feedback from my peers and instructors.
+
+
