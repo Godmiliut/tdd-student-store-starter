@@ -34,6 +34,9 @@ export default function ShoppingCart(props) {
                                 <span className="center">Unit Price</span>
                                 <span className="center">Cost</span>
                             </div>
+                            <div className="product-row">
+                                
+                            </div>
                         </div>
                     </div>
                 }

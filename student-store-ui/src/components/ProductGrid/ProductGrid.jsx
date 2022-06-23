@@ -25,7 +25,7 @@ export default function ProductGrid(props) {
       <div className="content">
         <h3>Best Selling Products</h3>
         <div className="grid">
-        {actualProducts.map((product,index)=>(<ProductCard key={index} product={product} showDescription={false} quantity={0}/>))}
+        {actualProducts.map((product,index)=>(<ProductCard key={index} handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart} product={product} showDescription={false} quantity={0}/>))}
         </div>
       </div>
     </div>

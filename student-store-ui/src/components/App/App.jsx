@@ -40,11 +40,36 @@ export default function App() {
     setIsOpen(!isOpen);
   }
   function handleAddItemToCart(productId){
-    console.log(products);
+    let shoppingProducts=[...shoppingCart];
+    let alreadyThere= false;
+    if(shoppingProducts.length > 0){
+      let i = 0;
+      while(i < shoppingProducts.length && alreadyThere == false){
+        if(shoppingProducts[i].itemId == productId){
+          let newQty = shoppingProducts[i].quantity + 1;
+          shoppingProducts[i] = {
+            itemId: productId,
+            quantity: newQty
+          };
+          setShoppingCart(shoppingProducts);
+          alreadyThere= true;
+        }
+        i++;
+      }
+    }
+    if(alreadyThere == false){
+      let shoppingProduct=""
+      shoppingProduct={
+        itemId: productId,
+        quantity: 1
+      }
+      setShoppingCart(shoppingCart => [...shoppingCart, shoppingProduct]);
+    }
+    console.log(shoppingCart);
   }
-
+  
   function handleRemoveItemFromCart(productId){
-    console.log(products);
+    console.log(shoppingCart);
   }
 
   function handleOnCheckoutFormChange(name, value){
@@ -66,7 +91,7 @@ export default function App() {
         <SubNavbar category={category} setCategory={setCategory} searchWord={searchWord} setSearchWord={setSearchWord}/>
         <Routes>
             {/* YOUR CODE HERE! */}
-            <Route path='/' element={<Home products={products} category={category} searchWord={searchWord}/>} />
+            <Route path='/' element={<Home handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} products={products} category={category} searchWord={searchWord}/>} />
             <Route path='/products/:productId' element={<ProductDetail products={products}/>} />
             <Route path='*' element={<NotFound />}/>
         </Routes>
