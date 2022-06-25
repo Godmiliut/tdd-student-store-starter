@@ -23,7 +23,7 @@ Backend
 - [x] User can click the '+' button on a product cart to increment that product in the shopping cart.
 - [x] User can click the '-' button on a product cart to increment that product in the shopping cart.
 - [x] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
-- [ ] User can check out, and can view receipt upon completion.
+- [x] User can check out, and can view receipt upon completion.
 
 #### Stretch Features
 
@@ -253,7 +253,7 @@ The following specifications were met on the Express backend and the React front
 **Models** - The API should use a `Store` model that handles the following
   - [x] List all products currently in the `db.json` file
   - [x] Fetch a single product by its id
-  - [ ] Create a purchase order
+  - [x] Create a purchase order
 
 **Routes** - The API should contain a route mounted at the `/store` endpoint
   - [x] It should respond to `GET` requests to `/store` with an array of all products in the store in this format: `{ "products": products }`
@@ -262,11 +262,11 @@ The following specifications were met on the Express backend and the React front
     - [x] The endpoint should create purchase orders for users and save them to the `db.json` file
     - [x] The endpoint should accept a request body that contains `shoppingCart` and `user` fields.
       - [x] The `shoppingCart` field should contain the user's order.
-        - [ ] This should be an array of objects.
-        - [ ] Each object in the array should have two fields:
+        - [x] This should be an array of objects.
+        - [x] Each object in the array should have two fields:
           <!-- - [ ] The `item` field should store an object of the item being purchased -->
-          - [ ] The `itemId` field should store the `id` of the item being purchased
-          - [ ] The `quantity` field should store a number representing how many of that item the user is purchasing.
+          - [x] The `itemId` field should store the `id` of the item being purchased
+          - [x] The `quantity` field should store a number representing how many of that item the user is purchasing.
       - [x] The `user` field should contain the name and email of the person placing the order.
       - [x] When either the `shoppingCart` or `user` fields are missing, it should throw a `400` error.
       - [ ] If there are duplicate items in the `shoppingCart`, it should throw a `400` error.
