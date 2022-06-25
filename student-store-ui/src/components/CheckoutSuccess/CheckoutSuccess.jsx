@@ -18,18 +18,23 @@ export default function CheckoutSuccess(props) {
             </header>
             <section className="card-body">
                 <ul>
-                    Check your email!
+                    Success!
                 </ul>
             </section>
         </div>
 
         : 
-
-        <div className="content">
-            <p>
-                A confirmation email will be sent to you so that you can confirm this order. Once you have confirmed the order, it will be delivered to your dorm room.
-            </p>
-        </div>}
+            props.error == "" ? 
+            <div className="content">
+                <p>
+                    A confirmation email will be sent to you so that you can confirm this order. Once you have confirmed the order, it will be delivered to your dorm room.
+                </p>
+            </div> :
+            
+            <p className="error">Error!</p>
+        
+        }
+        
         
     </div>
   )
