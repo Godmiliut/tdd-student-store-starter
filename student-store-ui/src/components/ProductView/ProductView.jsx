@@ -2,7 +2,6 @@ import * as React from "react"
 import "./ProductView.css"
 
 export default function ProductView(props) {
-    console.log(props.product.image);
     return(
         <div className="product-view">
             <h1 className="product-id">
@@ -42,12 +41,13 @@ export default function ProductView(props) {
                         <div className="actions">
                             <div className="buttons">
                                 <button className="add">
-                                    <i className="material-icons">add</i>
+                                    <i className="material-icons" onClick={() => {props.handleAddItemToCart(props.product.id)}}>add</i>
                                 </button>
                                 <button className="remove">
-                                    <i className="material-icons">remove</i>
+                                    <i className="material-icons" onClick={() => {props.handleRemoveItemFromCart(props.product.id)}}>remove</i>
                                 </button>
                             </div>
+                            { props.quantity > 0 ? <span className="quantity"><span className="amt">{props.quantity}</span></span> : null}
                         </div>
                     </div>
                 </div>

@@ -23,6 +23,14 @@
     background: #2c4047;
     border-right: solid 1px white;
 }
+
+.sidebar .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .sidebar .toggle-button {
     margin-top: 20px;
     transition: all .2s cubic-bezier(.075,.82,.165,1);

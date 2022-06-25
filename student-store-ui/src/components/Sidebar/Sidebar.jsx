@@ -20,7 +20,7 @@ export default function Sidebar(props) {
         <button className={bName} onClick={props.handleOnToggle}>
           <i className="material-icons md-48">arrow_forward</i>
         </button>
-        <ShoppingCart isOpen={props.isOpen} shoppingCart={props.shoppingCart}/>
+        <ShoppingCart isOpen={props.isOpen} products={props.products} shoppingCart={props.shoppingCart} checkoutForm={props.checkoutForm} handleOnCheckoutFormChange={props.handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={props.handleOnSubmitCheckoutForm} success={props.success} receipt={props.receipt} error={props.error}/>
       </div>
     </section>
   )

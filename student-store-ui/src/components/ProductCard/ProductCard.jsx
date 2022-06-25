@@ -4,7 +4,7 @@ import "./ProductCard.css"
 import { Link } from "react-router-dom";
 
 export default function ProductCard(props) {
-    let url='/products/' + props.product.id;
+    let url='/products/' + props.productId;
   return (
     <div className="product-card">
       <div className="media"><Link to={url}><img src={props.product.image}></img></Link></div>
@@ -32,14 +32,15 @@ export default function ProductCard(props) {
           <p className="product-price">${props.product.price}</p>
         </div>
         <div className="actions">
-        <div className="buttons">
-          <button className="add" onClick={() => {props.handleAddItemToCart(props.product.id)}}>
-            <i className="material-icons">add</i>
-          </button>
-          <button className="remove" onClick={() => {props.handleRemoveItemFromCart(props.product.id)}}>
-            <i className="material-icons">remove</i>
-          </button>
-        </div>
+          <div className="buttons">
+            <button className="add" onClick={() => {props.handleAddItemToCart(props.product.id)}}>
+              <i className="material-icons">add</i>
+            </button>
+            <button className="remove" onClick={() => {props.handleRemoveItemFromCart(props.product.id)}}>
+              <i className="material-icons">remove</i>
+            </button>
+          </div>
+          { props.quantity > 0 ? <span className="quantity"><span className="amt">{props.quantity}</span></span> : null}
       </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function Home(props) {
   const {products} = props;
   return (
     <div className="home">
-      <ProductGrid handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart} searchWord={props.searchWord} category={props.category} products={products}/>
+      <ProductGrid handleAddItemToCart={props.handleAddItemToCart} handleRemoveItemFromCart={props.handleRemoveItemFromCart} searchWord={props.searchWord} category={props.category} shoppingCart={props.shoppingCart} products={products}/>
       <About />
       <Contact />
       <Footer />

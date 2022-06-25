@@ -17,12 +17,14 @@ export default function App() {
   const [error, setError] = React.useState("");
   const [isOpen, setIsOpen] = React.useState("");
   const [shoppingCart, setShoppingCart] = React.useState([]);
-  const [checkoutForm,setCheckoutForm]= React.useState([]);
+  const [checkoutForm,setCheckoutForm]= React.useState({email: "", name: ""});
   const [category,setCategory]=React.useState("");
   const [searchWord, setSearchWord]=React.useState("");
+  const [success, setSuccess] = React.useState(false);
+  const [receipt, setReceipt] = React.useState({});
 
   React.useEffect(() =>{
-    axios.get("https://codepath-store-api.herokuapp.com/store").then(
+    axios.get("http://localhost:3001/store/").then(
       (response) =>{
         setIsFetching(true);
         setProducts(response.data.products);
@@ -33,12 +35,14 @@ export default function App() {
       }
     )
     }, [])
+
   function handleOnToggle(){
     if(isOpen==""){
       setIsOpen(false);
     }
     setIsOpen(!isOpen);
   }
+
   function handleAddItemToCart(productId){
     let shoppingProducts=[...shoppingCart];
     let alreadyThere= false;
@@ -65,34 +69,63 @@ export default function App() {
       }
       setShoppingCart(shoppingCart => [...shoppingCart, shoppingProduct]);
     }
-    console.log(shoppingCart);
   }
   
   function handleRemoveItemFromCart(productId){
-    console.log(shoppingCart);
+    let shoppingProducts=[...shoppingCart];
+    if(shoppingProducts.length > 0){
+      let i= 0;
+      while(i < shoppingProducts.length ){
+        if(shoppingProducts[i].itemId == productId){
+          let newQty= shoppingProducts[i].quantity - 1;
+          shoppingProducts[i] = {
+            itemId: productId,
+            quantity: newQty
+          }
+          if(shoppingProducts[i].quantity < 1){
+            shoppingProducts.splice(i,1);
+          }
+        }
+        i++;
+      }
+      setShoppingCart(shoppingProducts);
+    }
   }
 
   function handleOnCheckoutFormChange(name, value){
-    setCheckoutForm(name, value);
+    setCheckoutForm({...checkoutForm, [name]: value})
   }
 
-  function handleOnSubmitCheckoutForm(){
-    axios.post("https://codepath-store-api.herokuapp.com/store",{
-     
-    })
+  async function handleOnSubmitCheckoutForm(){
+    console.log(checkoutForm);
+    console.log(shoppingCart);
+    axios.post("http://localhost:3001/store/",{user: checkoutForm, shoppingCart: shoppingCart}).then(
+      (response) =>{
+        setReceipt(response.data.purchase.receipt);
+        setShoppingCart([]);
+        setCheckoutForm({});
+        setSuccess(true);
+       
+      },
+      (err) =>{
+        setError(err);
+        setSuccess(false);
+      }
+    )
   }
+
   return (
     <div className="app">
       <BrowserRouter>
         <main>
-        <Sidebar isOpen={isOpen} handleOnToggle={handleOnToggle} shoppingCart={shoppingCart}/>
+        <Sidebar isOpen={isOpen} handleOnToggle={handleOnToggle} products={products} shoppingCart={shoppingCart} checkoutForm={checkoutForm} handleOnCheckoutFormChange={handleOnCheckoutFormChange} handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm} success={success} error={error} receipt={receipt}/>
         <Navbar />
         <Hero/>
         <SubNavbar category={category} setCategory={setCategory} searchWord={searchWord} setSearchWord={setSearchWord}/>
         <Routes>
             {/* YOUR CODE HERE! */}
-            <Route path='/' element={<Home handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} products={products} category={category} searchWord={searchWord}/>} />
-            <Route path='/products/:productId' element={<ProductDetail products={products}/>} />
+            <Route path='/' element={<Home handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} products={products} category={category} searchWord={searchWord} shoppingCart={shoppingCart}/>} />
+            <Route path='/products/:productId' element={<ProductDetail products={products} handleAddItemToCart={handleAddItemToCart} handleRemoveItemFromCart={handleRemoveItemFromCart} shoppingCart={shoppingCart}/>} />
             <Route path='*' element={<NotFound />}/>
         </Routes>
         </main>

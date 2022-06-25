@@ -19,3 +19,21 @@
     max-width: 600px;
     width: 100%;
 }
+
+.product-card .quantity {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.product-card .quantity .amt {
+    background: #ff9017;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

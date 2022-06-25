@@ -145,5 +145,650 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "id": 1,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:42.873Z"
+    },
+    {
+      "id": 2,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:43.815Z"
+    },
+    {
+      "id": 3,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:58.505Z"
+    },
+    {
+      "id": 4,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:59.044Z"
+    },
+    {
+      "id": 5,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:59.478Z"
+    },
+    {
+      "id": 6,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:26:59.820Z"
+    },
+    {
+      "id": 7,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:27:00.131Z"
+    },
+    {
+      "id": 8,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:27:00.406Z"
+    },
+    {
+      "id": 9,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:28:43.038Z"
+    },
+    {
+      "id": 10,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T18:30:32.485Z"
+    },
+    {
+      "id": 11,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": 0,
+      "createdAt": "2022-06-24T19:05:24.588Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 12,
+      "name": "aaaaa",
+      "email": "aaaa",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 2
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T19:05:49.359Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 13,
+      "name": "aaaaatt",
+      "email": "aaaattt",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T19:06:40.574Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 14,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": "00.00",
+      "createdAt": "2022-06-24T19:14:58.096Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 15,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:18.625Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 16,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:20.484Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 17,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:20.980Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 18,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:21.421Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 19,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:21.782Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 20,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:22.213Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 21,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:22.689Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 22,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:23.179Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 23,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-24T19:15:34.331Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 24,
+      "name": "sfsf",
+      "email": "sfsfs",
+      "order": [],
+      "total": "00.00",
+      "createdAt": "2022-06-24T19:21:00.140Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 25,
+      "name": "sfsfs",
+      "email": "sfsfss",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 3
+        }
+      ],
+      "total": "9.758.53",
+      "createdAt": "2022-06-24T19:21:08.970Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 26,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": "object",
+      "createdAt": "2022-06-24T19:47:52.951Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 27,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": 0,
+      "createdAt": "2022-06-24T19:56:48.615Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 28,
+      "name": "adadad",
+      "email": "adad",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 2
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T20:09:51.338Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 29,
+      "name": "qrqwrqeqe",
+      "email": "adadasd",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 4
+        },
+        {
+          "itemId": 4,
+          "quantity": 2
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T20:10:35.010Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 30,
+      "name": "fdgdf",
+      "email": "fdg",
+      "order": [],
+      "total": 0,
+      "createdAt": "2022-06-24T20:14:05.384Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 31,
+      "name": "fgfgfg",
+      "email": "fgfgf",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T20:39:53.385Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 32,
+      "name": "sdsdsd",
+      "email": "sdsdsds",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 3
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T21:01:14.526Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 33,
+      "name": "fdfdf",
+      "email": "dfdfd",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 4
+        }
+      ],
+      "total": 0,
+      "createdAt": "2022-06-24T22:46:59.990Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 34,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": 0,
+      "createdAt": "2022-06-25T00:17:06.915Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 35,
+      "name": "adadda",
+      "email": "hehehe",
+      "order": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "total": {
+        "itemId": 4,
+        "quantity": 1
+      },
+      "createdAt": "2022-06-25T00:17:29.969Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 36,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:33:59.765Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 37,
+      "name": "sfsfff",
+      "email": "sfdsddsd",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 3
+        }
+      ],
+      "total": "8.977.85",
+      "createdAt": "2022-06-25T00:35:00.088Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 38,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:41:04.850Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 39,
+      "name": "adada",
+      "email": "adad",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:42:56.907Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 40,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:44:34.544Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 41,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:51:12.816Z",
+      "receipt": "hello"
+    },
+    {
+      "id": 42,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:51:26.144Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $3.252.84",
+        "After taxes and fees were applied, the total comes out to $NaN"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:51:45.995Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $3.252.84",
+        "After taxes and fees were applied, the total comes out to $NaN"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:51:59.011Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $3.252.84",
+        "After taxes and fees were applied, the total comes out to $NaN"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "3.252.84",
+      "createdAt": "2022-06-25T00:51:59.737Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $3.252.84",
+        "After taxes and fees were applied, the total comes out to $NaN"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": 6.09375,
+      "createdAt": "2022-06-25T00:52:31.188Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $6.09375",
+        "After taxes and fees were applied, the total comes out to $6.626953124999999"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": 6.09375,
+      "createdAt": "2022-06-25T00:52:31.995Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $6.09375",
+        "After taxes and fees were applied, the total comes out to $6.626953124999999"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": 6.09375,
+      "createdAt": "2022-06-25T00:52:32.691Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $6.09375",
+        "After taxes and fees were applied, the total comes out to $6.626953124999999"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "adadda",
+      "email": "heheh",
+      "order": [
+        {
+          "itemId": 4,
+          "quantity": 1
+        }
+      ],
+      "total": "6.09",
+      "createdAt": "2022-06-25T00:54:18.845Z",
+      "receipt": [
+        "Showing receipt foradaddaavailable at heheh:",
+        "Before taxes, the subtotal was $6.09",
+        "After taxes and fees were applied, the total comes out to $6.622875"
+      ]
+    }
+  ]
 }
