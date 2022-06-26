@@ -19,6 +19,11 @@ export default function CheckoutSuccess(props) {
             <section className="card-body">
                 <ul>
                     Success!
+                    {props.receipt.map((item, index) =>{
+                        return(
+                            <li>{item}</li>
+                        )
+                    })}
                 </ul>
             </section>
         </div>
