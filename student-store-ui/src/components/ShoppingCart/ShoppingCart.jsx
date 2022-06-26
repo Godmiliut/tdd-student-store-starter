@@ -6,6 +6,7 @@ export default function ShoppingCart(props) {
     let total = 0;
     let tax= 0;
     let final= 0;
+    
   return (
     <div className="shopping-cart">
         {props.isOpen == false ?
